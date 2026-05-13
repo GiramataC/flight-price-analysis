@@ -1,0 +1,20 @@
+# name: flight_analytics
+# version: 1.0
+
+# profile: flight_analytics
+
+# model-paths: ["models"]
+
+name: flight_analytics
+version: '1.0'
+
+# FIX: Added required config-version and models block
+config-version: 2
+
+profile: flight_analytics
+
+model-paths: ["models"]
+
+models:
+  flight_analytics:
+    +materialized: table

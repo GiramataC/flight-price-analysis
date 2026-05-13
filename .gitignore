@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables / secrets
+.env
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# Data folders
+data/
+datasets/
+
+
+
+# Airflow
+logs/
+airflow/*.db
+
+# dbt
+target/
+dbt_packages/
+
+# Docker
+*.pid
+
+# Java / Spark jars
+*.jar
+
+# OS files
+.DS_Store
+Thumbs.db
