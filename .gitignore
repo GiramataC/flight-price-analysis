@@ -39,3 +39,15 @@ dbt_packages/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Model files
+*.pkl
+
+# Wheels
+*.whl
+
+# Outputs
+outputs/
+scripts/flight_fare/outputs/
+
+

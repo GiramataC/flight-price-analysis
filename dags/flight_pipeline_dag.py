@@ -89,6 +89,15 @@ def run_load_to_postgres(**context):
         target_table="raw_flights",
         run_id=run_id
     )
+# def task_inspect(**context):
+#     import sys
+#     sys.path.insert(0, PROJECT_PATH)
+#     from data.loader import load
+
+#     df_raw = load()
+#     log.info("Raw shape: %d rows × %d cols", *df_raw.shape)
+#     context["ti"].xcom_push(key="raw_shape", value=df_raw.shape)
+#     return "inspect_ok"
 
 def run_dbt():
     subprocess.run(
